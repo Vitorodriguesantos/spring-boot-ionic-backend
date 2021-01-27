@@ -40,7 +40,6 @@ public class ClienteService {
 
 	
 	public void delete(Integer id) {
-		
 		find(id);
 		try {
 			repo.deleteById(id);
