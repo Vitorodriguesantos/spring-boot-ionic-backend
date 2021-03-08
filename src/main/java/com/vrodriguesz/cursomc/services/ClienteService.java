@@ -1,4 +1,4 @@
-package com.vrodriguesz.cursomc.services;
+	package com.vrodriguesz.cursomc.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -61,7 +61,7 @@ public class ClienteService {
 			repo.deleteById(id);
 		}catch(DataIntegrityViolationException e) {
 			
-			throw new DataIntegrityException("Não é possível excluir porque há entidades relacionadas");
+			throw new DataIntegrityException("Não é possível excluir porque há pedidos relacionadas");
 		}
 	}
 	
